@@ -1,14 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {  Button, StyleSheet, Text, View } from 'react-native';
 //https://lagandlog.com/logs/how-to-use-tailwind-css-in-react-native
 import tw from 'tailwind-react-native-classnames';
+import StackNavigator from './StackNavigator';
+import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
   return (
-    <View style={tw`flex-1 justify-center items-center`}>
-      <Text style={tw`text-blue-600`}>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer> 
+      <StackNavigator/>
+    </NavigationContainer>
   );
 }
 
