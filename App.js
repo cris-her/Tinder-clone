@@ -3,6 +3,8 @@ import {  Button, StyleSheet, Text, View } from 'react-native';
 //https://lagandlog.com/logs/how-to-use-tailwind-css-in-react-native
 import tw from 'tailwind-react-native-classnames';
 import StackNavigator from './StackNavigator';
+import { LogBox } from 'react-native';
+LogBox.ignoreAllLogs(); // ignore log notificaiton by message
 import { NavigationContainer } from '@react-navigation/native';
 import { AuthProvider } from './hooks/useAuth';
 
